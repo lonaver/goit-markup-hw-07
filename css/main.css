@@ -622,7 +622,7 @@ p {
           justify-content: center;
   min-height: 120px;
   margin-bottom: 30px;
-  background-color: var(--color-background-grey);
+  background-color: rgb(245, 244, 250);
   /* outline: 2px solid tomato; */
 }
 
@@ -877,7 +877,7 @@ p {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__icon-close:focus .modal__icon-close, .modal__icon-close:hover .modal__icon-close {
+.modal__btn-close:focus .modal__icon-close, .modal__btn-close:hover .modal__icon-close {
   fill: rgb(33, 150, 243);
 }
 
@@ -887,6 +887,7 @@ p {
   padding-top: 40px;
   padding-left: 41px;
   padding-right: 39px;
+  padding-bottom: 40px;
 }
 
 .modal-form__subtitle {
@@ -1034,11 +1035,11 @@ p {
 .modal__icon-policy {
   padding: 0;
   margin-right: 8px;
-  /* stroke: rgb(33, 33, 33); */
+  background-color: rgb(255, 255, 255);
   fill: rgb(255, 255, 255);
   border: 2px solid rgb(33, 33, 33);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__check-policy:checked + .modal__icon-policy {
   background-color: rgb(33, 150, 243);
@@ -1057,8 +1058,14 @@ p {
 /*button*/
 .modal__btn-send {
   display: block;
+  max-width: 200px;
+  max-height: 50px;
+  padding: 10px 52px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1202,4 +1209,5 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
 }/*# sourceMappingURL=main.css.map */
